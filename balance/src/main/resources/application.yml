@@ -1,0 +1,13 @@
+server:
+  port: 3003
+spring:
+  application:
+    name: balance-service
+  datasource:
+    url: jdbc:mysql://mysql:3306/balance
+    username: root
+    password: root
+
+kafka:
+  groupId: balance-group
+  bootstrapServers: kafka:29092

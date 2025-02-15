@@ -1,0 +1,19 @@
+
+POST http://localhost:3001/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+    "account_id_from": "408ee314-bc5f-43c1-9968-e7aaf014c95c",
+    "account_id_to": "8e7376fb-7d89-431a-bfec-b5ce351aa64d",
+    "amount": 50
+}
+
+### Get balance account id 408ee314-bc5f-43c1-9968-e7aaf014c95c
+GET http://localhost:3003/balances/408ee314-bc5f-43c1-9968-e7aaf014c95c HTTP/1.1
+Accept: application/json
+
+
+
+### Get balance account id 8e7376fb-7d89-431a-bfec-b5ce351aa64d
+GET http://localhost:3003/balances/8e7376fb-7d89-431a-bfec-b5ce351aa64d HTTP/1.1
+Accept: application/json
